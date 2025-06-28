@@ -1,0 +1,35 @@
+//Create a simple calculator using the Switch case.
+
+#include <stdio.h>
+int main() {
+    char operator;
+    printf("Choose a option ( + - * / ) : ");
+    scanf(" %c",&operator);
+    double num1 ,num2;
+    printf("Enter two numbers: ");
+    scanf("%lf",&num1);
+    scanf("%lf",&num2);
+    double result;
+    switch(operator){
+        case '+':
+        result=num1+num2;
+        printf("Summation of %.2lf and %.2lf is : %.2lf",num1,num2,result);
+        break;
+        case '-':
+        result=num1-num2;
+        printf("Subtraction of %.2lf and %.2lf is : %.2lf",num1,num2,result);
+        break;
+        case '*':
+        result=num1*num2;
+        printf("Multiplication of %.2lf and %.2lf is : %.2lf",num1,num2,result);
+        break;
+        case '/':
+        result=num1/num2;
+        printf("Division of %.2lf by %.2lf is: %lf",num1,num2,result);
+        break;
+        default:
+        printf("Invalid!");
+    }
+    return 0;
+}
+    

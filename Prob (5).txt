@@ -1,0 +1,20 @@
+//Write a C program to convert a character from Uppercase to lowercase.
+
+#include <stdio.h>
+int main(){
+char upperCase;
+char lowerCase;
+
+printf("Enter a character: ");
+scanf(" %c",&upperCase);
+if (upperCase >='a'&& upperCase <='z'){
+    printf("'%c' is already in lowerCase",upperCase);
+}
+else if (upperCase >='A' && upperCase <='Z'){
+    lowerCase=upperCase+32;
+    printf("Lower case of %c is: '%c'",upperCase,lowerCase);
+}else{
+    printf("'%c' is not an alphabet",upperCase);
+}
+return 0;
+}

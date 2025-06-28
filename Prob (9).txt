@@ -1,0 +1,24 @@
+//Create a C program that will print the quadrant of a point
+#include <stdio.h>
+int main(){
+    float x,y;
+    printf("Enter x and y coordinates: ");
+    scanf("%f",&x);
+    scanf("%f",&y);
+    if(x>0 && y>0){
+        printf("(%.2f, %.2f) point is on the 1st quadrant.",x,y);
+    }else if(x<0 && y>0){
+       printf("(%.2f, %.2f) point is on the 2nd quadrant.",x,y);
+    }else if (x>0 && y<0){
+       printf("(%.2f, %.2f) point is on the 4th quadrant.",x,y);
+    }else if (x<0 && y<0){
+       printf("(%.2f, %.2f) point is on the 3rd quadrant.",x,y);
+    }else if (x>0 && y==0){
+        printf("(%.2f, %.2f) point is on the x axis.",x,y);
+    }else if (x==0 && y<0){
+        printf("(%.2f, %.2f) point is on the y axis.",x,y);
+    }else{
+        printf("(%.2f, %.2f) point is the origin.",x,y);
+    }
+    return 0;
+}
