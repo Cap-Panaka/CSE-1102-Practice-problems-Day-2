@@ -1,1 +1,1 @@
-# CSE-1102-Practice-problems-Day-2
+# CSE-1102-Practice-problems-Week-2
